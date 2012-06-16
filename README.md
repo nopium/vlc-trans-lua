@@ -39,11 +39,11 @@ When in pause press F12 to translate current subtitle.
 Tweaking
 --------
 
-SOURCE_LANG = "en"  -- source langauge
-TARGET_LANG = "ru"  -- target language
+SOURCE_LANG = "en"  --source langauge
+TARGET_LANG = "ru"  --target language
 
-translator = "yandex" -- google, yandex
-osd_duration = 10   -- messages duration
+translator = "yandex" --google, yandex
+osd_duration = 10   --messages duration
 
 osd_position = "top-left"
 

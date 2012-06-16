@@ -2,8 +2,9 @@ vlc-trans-lua
 =============
 
 VLC Lua extension for translating subtitles in realtime via online translators.
-The purpose of this extension is to enforce learning of foreign languages, helping me to watch movies in their original language,
- providing the ability to the meaning on the fly.
+The purpose of this extension is to enforce learning of foreign languages. 
+Just watch movies in their original language with their subtitles,
+ and get the translation on the fly when necessary.
 
 Requirements
 ------------

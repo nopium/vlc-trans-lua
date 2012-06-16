@@ -39,14 +39,18 @@ When in pause press F12 to translate current subtitle.
 Tweaking
 --------
 You can tweak some params in the beginning of the file:
-Langauages:
-*SOURCE_LANG* = "en"  
-*TARGET_LANG* = "ru"  
+
+Languages:
+
+**SOURCE_LANG** = "en"  
+**TARGET_LANG** = "ru"  
 
 Translation engines: yandex, or google 
-*translator* = "yandex" 
+
+**translator** = "yandex" 
 
 OSD:
-*osd_duration* = 10
-*osd_position* = "top-left"
+
+**osd_duration** = 10
+**osd_position** = "top-left"
 

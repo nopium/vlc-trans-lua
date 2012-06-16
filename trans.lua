@@ -53,7 +53,7 @@ function activate()
 
 --film = string.gsub(film, "([\(|\)])", "\%1" )
 
-    fileName = string.gsub( string.gsub( string.gsub(film, "^(.+)%.%w+$", "%1") ,"%%20"," "),"file://","").."..srt"
+    fileName = string.gsub( string.gsub( string.gsub(film, "^(.+)%.%w+$", "%1") ,"%%20"," "),"file://","")..".srt"
 
     _log(fileName)
 

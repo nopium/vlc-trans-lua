@@ -5,14 +5,16 @@ VLC Lua extension for translating subtitles in realtime via online translators.
 The purpose of this extension is to enforce learning of foreign languages, helping me to watch movies in their original language,
  providing the ability to the meaning on the fly.
 
-===Requirements:
+Requirements
+------------
 
 The only supported format is SRT subtitle.
 The subtitle file name should be the same as movie filename but with ".srt" extension. This is due to the lack of VLC API, sorry.
 Internet connection.
 
 
-===Install
+Install
+-------
 
 Put the file in the VLC subdir /lua/extensions, by default:
 
@@ -29,11 +31,13 @@ Restart the VLC.
 Enable the extension by going to the "View" menu and selecting it.
 
 
-===How to use
+How to use
+----------
 
 When in pause press F12 to translate current subtitle.
 
-===Tweaking
+Tweaking
+--------
 
 SOURCE_LANG = "en"  -- source langauge
 TARGET_LANG = "ru"  -- target language

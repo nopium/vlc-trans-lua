@@ -66,7 +66,7 @@ function activate()
         vlc.var.add_callback( vlc.object.libvlc(), "key-pressed", key_press )
         vlc.osd.message("press f12 to translate current subtitle", channel1, osd_position, osd_duration*1000*1000 )
     else
-        vlc.osd.message("Unknown error: please send bug report", channel1, osd_position)
+        vlc.osd.message("Unknown error: please send bug report", channel1, osd_position, osd_duration*1000*1000)
 
     end
 end

@@ -260,7 +260,7 @@ end
 
 --return subtitle start/end time--
 function getSubtitleTimes( line )
-    local parts = line:split(" --> ")
+    local parts = split(line, " --> ")
     local hourStart, minuteStart, secondStart, milliStart = _splitSRTLine( parts[1] )
     local timeStart   = hourStart*3600000 + minuteStart*60000 + secondStart*1000 + milliStart
     local hourEnd, minuteEnd, secondEnd, milliEnd = _splitSRTLine( parts[2] )
@@ -270,10 +270,10 @@ end
 
 -- split xx:xx:xx,xx into hours, minutes, seconds, milliseconds
 function _splitSRTLine( line )
-    local parts = line:split( "," )
+    local parts = split(line, "," )
     local milli = parts[2]
     --_log( parts[1] )
-    parts = parts[1]:split( ":" )
+    parts = split(parts[1], ":" )
 
     local h = parts[1]
     local m = parts[2]
@@ -304,7 +304,7 @@ function getCurrentTime()
 end
 
 -- split string by separator
-function string:split(sSeparator, nMax, bRegexp)
+function split ( self, sSeparator, nMax, bRegexp)
     assert(sSeparator ~= '')
     assert(nMax == nil or nMax >= 1)
 
@@ -331,15 +331,15 @@ end
 
 
 function test_split(line)
-    parts = line:split(" --> " )
+    parts = split(line, " --> " )
     print( parts[1] )
     print( parts[2] )
 
-    parts = parts[1]:split(",")
+    parts = split(parts[1], ",")
     print( parts[1] )
     print( parts[2] )
 
-    parts = parts[1]:split(":")
+    parts = split(parts[1], ":")
     print( parts[1] )
     print( parts[2] )
     print( parts[3] )
@@ -350,6 +350,6 @@ function _log(m)
     vlc.msg.info( "[".. TAG .."] ".. m )
 end
 
---test_split("00:00:23,089 --> 00:00:24,215")
+-- test_split("00:00:23,089 --> 00:00:24,215")
 
 

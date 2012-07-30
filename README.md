@@ -13,6 +13,8 @@ The only supported format is SRT subtitle.
 The subtitle file name should be the same as movie filename but with ".srt" extension. This is due to the lack of VLC API, sorry.
 Internet connection.
 
+![Alt text](https://sites.google.com/site/vlctranslua/_/rsrc/1343639212279/home/Screen%20shot%202012-07-30%20at%203.02.14%20PM.png)
+
 
 Install
 -------
@@ -36,6 +38,8 @@ How to use
 ----------
 
 When in pause press F12 to translate current subtitle.
+
+![Alt text](https://sites.google.com/site/vlctranslua/_/rsrc/1343639234551/home/Screen%20shot%202012-07-30%20at%203.01.35%20PM.png)
 
 Tweaking
 --------
